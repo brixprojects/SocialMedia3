@@ -18,3 +18,12 @@ export const getUser = async(req, res)=>{
         res.status(500).json(error)
     }
 };
+
+
+// update a user 
+export const  updateUser = async (req, res) => {
+    const id = req.params.id
+    const {currentUserId, currentUserAdminStatus, password} = req.body
+
+    if(id===currentUserId)
+}
